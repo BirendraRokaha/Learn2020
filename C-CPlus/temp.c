@@ -9,7 +9,7 @@ int main()
 
     lower = 20;
     upper = 300;
-    step = 20;
+    step = 10;
 
     fahr = lower;
     while (fahr <= upper) {
