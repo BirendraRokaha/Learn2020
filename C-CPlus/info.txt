@@ -1,0 +1,14 @@
+Useful terminal C commands
+
+
+Compile a C program:
+gcc [program_name] -o [output name]
+
+
+Data types and format specifiers:
+
+int %d
+char %c
+float %f
+double %lf
+

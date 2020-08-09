@@ -1,8 +1,0 @@
-Useful terminal C commands
-
-
-Compile a C program
-
-gcc [program_name] -o [output name]
-
-
