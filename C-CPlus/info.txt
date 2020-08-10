@@ -12,3 +12,5 @@ char %c
 float %f only 2 places %.2f
 double %lf
 
+check if string is empty
+if (strlen(string) == 0) 
