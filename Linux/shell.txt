@@ -1,0 +1,11 @@
+---- Useful Shell tricks ----
+
+clear = ctrl + l
+exit = ctrl + d
+home = cd ~
+toggle  = cd -
+
+shells installed  = cat /etc/shells
+which shell = echo $0
+change shell = chsh -s $(which zsh)
+
