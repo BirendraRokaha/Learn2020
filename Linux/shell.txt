@@ -9,3 +9,5 @@ shells installed  = cat /etc/shells
 which shell = echo $0
 change shell = chsh -s $(which zsh)
 
+tmux config = https://github.com/gpakosz/.tmux
+

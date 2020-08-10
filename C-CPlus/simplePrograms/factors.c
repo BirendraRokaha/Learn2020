@@ -16,7 +16,6 @@ int main()
             printf("%d \n",i);
         }    
     }
-
     if (count <= 2)
     {
         printf("%d is a prime number.\n",num);
