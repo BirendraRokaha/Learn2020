@@ -1,0 +1,7 @@
+Configuration files and locations
+
+Terminal themes = https://atomcorp.github.io/themes/
+
+tmux config = https://github.com/gpakosz/.tmux
+
+

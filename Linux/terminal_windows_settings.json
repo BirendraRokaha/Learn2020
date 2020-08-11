@@ -50,9 +50,11 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl",
-                "colorScheme": "Neutron",
+                "colorScheme": "BlulocoDark",
                 "useAcrylic": true, 
-                "acrylicOpacity": 0.1
+                "acrylicOpacity": 0.2,
+                "fontSize":10,
+                "padding":"4, 4, 4, 4"
             },
             {
 		// Make changes here to the cmd.exe profile.
@@ -79,7 +81,7 @@
             "name": "Atom",
             "black": "#000000",
             "red": "#fd5ff1",
-            "green": "#87c38a",
+            "green": "#a8c2a9",
             "yellow": "#ffd7b1",
             "blue": "#85befd",
             "purple": "#b9b6fc",
@@ -117,6 +119,27 @@
             "brightWhite": "#ebedf2",
             "background": "#1c1e22",
             "foreground": "#e6e8ef"
+          },
+          {
+            "name": "BlulocoDark",
+            "black": "#4a505d",
+            "red": "#f81141",
+            "green": "#23974a",
+            "yellow": "#fd7e57",
+            "blue": "#285bff",
+            "purple": "#8c62fd",
+            "cyan": "#366f9a",
+            "white": "#ccd5e5",
+            "brightBlack": "#61697a",
+            "brightRed": "#fc4a6d",
+            "brightGreen": "#37bd58",
+            "brightYellow": "#f6be48",
+            "brightBlue": "#199ffd",
+            "brightPurple": "#fc58f6",
+            "brightCyan": "#50acae",
+            "brightWhite": "#ffffff",
+            "background": "#1e2127",
+            "foreground": "#abb2bf"
           }
 
     ],
