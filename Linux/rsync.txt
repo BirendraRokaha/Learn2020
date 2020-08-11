@@ -1,0 +1,75 @@
+Documentation = https://linux.die.net/man/1/rsync
+
+
+Useful links
+https://devhints.io/rsync
+https://www.danielms.site/blog/rsync-cheatsheet/
+
+
+
+Installtation = sudo apr-get install rsync
+
+ 
+rsync
+Local:  rsync [OPTION...] SRC... [DEST]
+Access via remote shell:
+  Pull: rsync [OPTION...] [USER@]HOST:SRC... [DEST]
+  Push: rsync [OPTION...] SRC... [USER@]HOST:DEST
+Access via rsync daemon:
+  Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST]
+        rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]
+  Push: rsync [OPTION...] SRC... [USER@]HOST::DEST
+        rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST
+
+
+
+Basic syntax
+
+rsync Original/* Backup/
+
+Basic Options
+-r: The ‘r’ flag denotes that the operation is recursive. It will copy across all files and folders inside the source directory. However, if the source destination does not have a trailing slash it will copy the folder, rather than the files inside the folder.
+
+-a Archive mode is superior to recursive mode as it will sustain symbolic links, special and device files, modification times, group, owner and permissions.
+
+--dry-run or -n As a sanity check it is worth checking that your command is going to do what you think it is going to do. The dry run will not execute the command. It can (read: should) be coupled with the next command.
+
+-v: Verbose will print out the what actions were undertaken by the command. If -n is not coupled with a verbose flag it will print nothing to the screen.
+
+--delete: Will remove extra items in the destination folder that do not exist in the source directory. Caution: This can lead to complete deletion of the destination folder if incorrectly implemented.
+
+-z: When transferring across the network rsync provides a compression option to save on bandwidth.
+
+-P: Outputs a progress bar to the terminal.
+
+-H: Preserves hard links - very useful for back ups and snap shots as files that don’t change are often hard linked to the original file.
+
+--stats: will output a summary of what was sent. Use --stats -h to get a human readable output.
+
+
+
+--exclude=important_file.txt: Can be used to omit files or directories from being synced.
+
+--exclude=backups/ --include=backups/most_recent: Inside the exclusion we can explicitly include certain file, folders or patterns that fall inside the broader exclude.
+
+
+CWrsync -t *.c foo:src/
+
+breakdown
+ CWrsycn = call command
+ -t = transfer files
+ *.c = all files wih .c extension
+ foo:src/ = foo- remote machine src/ directory
+
+
+CWrsync somehost.mydomain.com::
+
+
+
+UBUNTU
+rsync src/* dst/
+
+
+
+
+

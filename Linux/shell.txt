@@ -11,3 +11,8 @@ change shell = chsh -s $(which zsh)
 
 tmux config = https://github.com/gpakosz/.tmux
 
+number of files in a dir
+    ls -F |grep -v / | wc -l
+    ls -F list all files and append indicator (one of */=>@|) to entries
+    grep -v / keep all de strings that do not contain a slash
+    wc -l count lines

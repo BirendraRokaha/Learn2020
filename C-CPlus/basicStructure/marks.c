@@ -17,25 +17,25 @@ int main ()
     if (sci < 40 || math <40 || comp < 40 || eng < 40)
     {
         printf("----Failed----\n");
-        printf("Total : %.2f Prcentage : %.2f \n",total,per);
+        printf("Total : %.2f Prcentage : %.2f %% \n",total,per);
    
     }
     else if (per >=80 && per < 100)
     {
         printf("----Distinction----\n");   
-        printf("Total : %.2f Prcentage : %.2f \n",total,per);
+        printf("Total : %.2f Prcentage : %.2f %% \n",total,per);
 
     }
-    else if ( per >=  60 && per < 70 )
+    else if ( per >=  60 && per < 80 )
     {
         printf("----First Division----\n");    
-        printf("Total : %.2f Prcentage : %.2f \n",total,per);
+        printf("Total : %.2f Prcentage : %.2f %% \n",total,per);
 
     }
     else if (per >=40 && per < 60 )
     {
         printf("----Second Division----\n");    
-        printf("Total : %.2f Prcentage : %.2f \n",total,per);
+        printf("Total : %.2f Prcentage : %.2f %% \n",total,per);
     }
 
     printf("----End----\n");

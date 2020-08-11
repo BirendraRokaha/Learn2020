@@ -1,0 +1,8 @@
+my method
+
+cat *.log | awk '{if($12 == 200 && grep "inet addt" $9 )  print$9, $12}'|sort | uniq -c | sort -nr | awk '  BEGIN{printf"%-8s %-20s\n" , "count","IP Address"}        {    printf "%-8d %-20s\n", $1,$2}' >> newcsv.csv
+
+
+better method 
+
+cat *.log | sed -r '/\n/!s/[0-9.]+/\n&\n/;/^([0-9]{1,3}\.){3}[0-9]{1,3}\n/P;D' | sort | uniq -c | sort -n -r
