@@ -14,3 +14,10 @@ double %lf
 
 check if string is empty
 if (strlen(string) == 0) 
+
+pointer
+a = 20
+*p = &a
+
+print p = prints the address
+print *p = value at address
