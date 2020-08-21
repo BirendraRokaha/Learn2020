@@ -18,5 +18,10 @@ export class NotesComponent implements OnInit {
       this.notes = notes;
     });
   }
-
+  deleteNote(note:Notes) {
+    //Remove form UI
+    this.notes = this.notes.filter(n => n.id !== note.id);
+    //Remove from server
+    this.noteService.deleteNote(note).subscribe();
+  }
 }

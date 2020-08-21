@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter,Output } from '@angular/core';
+import { NoteService } from '../../services/note.service'
+
 import { Notes } from 'src/app/models/Notes';
 
 @Component({
@@ -9,9 +11,10 @@ import { Notes } from 'src/app/models/Notes';
 export class NoteItemComponent implements OnInit {
   
   @Input() note:Notes;
+  @Output() deleteNote: EventEmitter<Notes> = new EventEmitter();
 
 
-  constructor() { }
+  constructor(private noteService:NoteService) { }
 
   ngOnInit(): void {
   }
@@ -27,10 +30,14 @@ export class NoteItemComponent implements OnInit {
   }
 
   onToggle(note) {
+    // Toggle in UI
     note.urgency = !note.urgency;
+    // Toggle on server
+    this.noteService.toggleurgency(note).subscribe(note =>
+    console.log(note));
   }
 
   onDelete(note) {
-    console.log('delete');
+    this.deleteNote.emit(note);
   }
 }
