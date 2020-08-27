@@ -49,7 +49,6 @@ int main()
     int len = sizeof(arr) / sizeof(arr[0]);
     printarray(arr,len);
     quicksort(arr, 0, len-1);
-    printf("Sorted array\n");
     printarray(arr, len);
     return 0;
 }
