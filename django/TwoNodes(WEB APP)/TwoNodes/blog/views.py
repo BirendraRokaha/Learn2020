@@ -7,13 +7,13 @@ posts = [
         'author':'John Smith',
         'title':'First post',
         'content':'Good to have account with TwoNodes',
-        'DatePosted':'9 September 2020'
+        'datePosted':'9 September 2020'
     },
     {
         'author':'Johan Appleased',
         'title':'Second post',
         'content':'Two nodes is the next TwoNodes',
-        'DatePosted':'10 September 2020'
+        'datePosted':'10 September 2020'
     }
 ]
 
