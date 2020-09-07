@@ -1,0 +1,11 @@
+## Useful commands while for django
+
+1. Create a virtual encironment - pipenv shell
+
+2. Install Django - pipenv install django
+
+3. Create a django project - django-admin startproject {Project_name}
+
+4. Run server - python manage.py runserver
+
+5. Create an app - python manage.py startapp {app_name}
