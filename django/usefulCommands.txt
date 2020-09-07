@@ -9,3 +9,10 @@
 4. Run server - python manage.py runserver
 
 5. Create an app - python manage.py startapp {app_name}
+
+6. Create a DB migration - python manage.py makemigrations (run this first before creating a admin user)
+
+7. Migrate the DB - python manage.py Migrate
+
+8. Create an admin - python manage.py createsuperuser
+
