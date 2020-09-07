@@ -1,7 +1,9 @@
 from django.shortcuts import render
 # from django.http import HttpResponse  no longer needed
+from .models import Post
 
-
+'''
+Dummy Data
 posts = [
     {
         'author':'John Smith',
@@ -37,11 +39,11 @@ posts = [
         'datePosted':'9 September 2020'
     }
 ]
-
+'''
 
 def home(request):
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 
@@ -49,6 +51,8 @@ def home(request):
 def about(request):
     return render(request, 'blog/about.html',{'title':'About Us.'})
 
+
+# Dummy request
 # def contact(request):
 #     return HttpResponse('<h1 style="color: 	#B8860B; text-align: center;">Contact us.</h1>')
 

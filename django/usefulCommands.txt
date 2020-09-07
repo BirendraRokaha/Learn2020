@@ -16,3 +16,6 @@
 
 8. Create an admin - python manage.py createsuperuser
 
+9. check the sql querey - python manage.py sqlmigrate {app_name} {DB.number}
+
+10. django shell - python manage.py shell
