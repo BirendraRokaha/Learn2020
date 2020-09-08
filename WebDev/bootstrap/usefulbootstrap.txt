@@ -1,0 +1,13 @@
+Things to remember for bootstrap.
+
+1. 12 columns
+
+2. class breakdown
+                    class = "col-md-4 col-sm-6"
+                    for medium devices take 4 column space
+                    for small devices take 6 column space
+
+                    class= "col"
+                    distribute evenly
+
+3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
