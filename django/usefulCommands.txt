@@ -1,6 +1,6 @@
 ## Useful commands while for django
 
-1. Create a virtual encironment - pipenv shell
+1. Create a virtual encironment and start the project again -  pipenv shell
 
 2. Install Django - pipenv install django
 
