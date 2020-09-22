@@ -1,0 +1,6 @@
+# Why numpy over list?
+- Speed
+-- Numpy uses fixed type.
+-- The built in int type stores a lot more space.
+-- Faster to read as less bytes of memory is used.
+-- Uses contiguous memory.
